@@ -10,7 +10,7 @@ const PDFElement = ({ element }: Props) => {
   }
   let url = element.page ? `${element.url}#page=${element.page}` : `${element.url}#page=0`;
 
-  url = true ? `${url}&search=jack` : url;
+  url = element.search ? `${url}&search=${element.search}` : `${url}&search=jack`;
   return (
     <iframe
       className={`${element.display}-pdf h-full w-full border-none`}
