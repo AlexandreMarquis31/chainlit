@@ -281,7 +281,7 @@ class Pdf(Element):
     mime: str = "application/pdf"
     page: Optional[int] = None
     type: ClassVar[ElementType] = "pdf"
-    search = Optional[str] = None
+    search: Optional[str] = None
 
 
 @dataclass
