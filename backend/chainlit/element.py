@@ -60,6 +60,7 @@ class ElementDict(TypedDict, total=False):
     size: Optional[ElementSize]
     language: Optional[str]
     page: Optional[int]
+    search: Optional[str]
     props: Optional[Dict]
     autoPlay: Optional[bool]
     playerConfig: Optional[dict]
@@ -120,6 +121,7 @@ class Element:
                 "size": getattr(self, "size", None),
                 "props": getattr(self, "props", None),
                 "page": getattr(self, "page", None),
+                "search": getattr(self, "search", None),
                 "autoPlay": getattr(self, "auto_play", None),
                 "playerConfig": getattr(self, "player_config", None),
                 "language": getattr(self, "language", None),
