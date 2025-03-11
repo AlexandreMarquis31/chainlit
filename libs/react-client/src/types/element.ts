@@ -49,6 +49,7 @@ export interface ITextElement extends TMessageElement<'text'> {
 
 export interface IPdfElement extends TMessageElement<'pdf'> {
   page?: number;
+  search?: string;
 }
 
 export interface IAudioElement extends TMessageElement<'audio'> {
